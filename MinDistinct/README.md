@@ -18,5 +18,4 @@ Write a function:
 
 Full description of the question:
 
-<img src="EvenPairsOnCycle1.jpg" />
-<img src="EvenPairsOnCycle2.jpg" />
+<img src="MinDistinctDescription1.jpg" />
