@@ -2,27 +2,17 @@ package data_structure;
 
 public class MaxContiguousSum {
 	
-	public static int findMaxContiguousSum(int[] A) {
-		
-		int maxSum = 0;
-		int currentSum = 0; 
-		
-		for (int i = 0; i < A.length; i++) {
-			currentSum += A[i];
-			
-			if (currentSum > maxSum) {
-				maxSum = currentSum;
-			}
-			
-			if (currentSum < 0) {
-				currentSum = 0;
-			}
+	public int maxSubArray(int[] A) {
+        int maxSum = A[0];
+		int currentSum = A[0];
+
+		for (int i = 1; i < A.length; i++) {
+			currentSum = Math.max(A[i], currentSum + A[i]);
+			maxSum = Math.max(maxSum, currentSum);
 		}
-		
-		
+
 		return maxSum;
-		
-	}
+    }
 
 	public static void main(String[] args) {
 		int[] A1 = {7,-2,-7,4,3,2};
