@@ -66,7 +66,3 @@ In your solution, focus on **correctness**. The performance of your solution wil
 | 1-day       | 2    | 1 day    |
 | 7-day       | 7    | 7 consecutive days |
 | 30-day      | 25   | All 30 days |
-
-## Solution Approach Hints
-
-Consider using dynamic programming to find the optimal combination of tickets that minimizes the total cost while covering all travel days.
